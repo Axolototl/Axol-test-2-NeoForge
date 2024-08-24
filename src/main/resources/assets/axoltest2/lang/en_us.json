@@ -29,9 +29,9 @@
   "itemGroup.axoltest2.black_opal_items_tab": "Black Opal Items",
   "itemGroup.axoltest2.black_opal_blocks_tab": "Black Opal Blocks",
 
-  "tooltip.axoltest.chainzaw.tooltip.shift": "Press §l§2Shift§r for more info.",
-  "tooltip.axoltest.chainzaw.tooltip.1": "Will decimate all tree logs",
-  "tooltip.axoltest.chainzaw.tooltip.2": "§1Brooom Brooom§r",
-  "tooltip.axoltex.magic_block.tooltip": "Converts §8black opals§r into §bdiamonds§r",
-  "tooltips.axoltest.tomato.tooltip": "gives §aLUCK§r"
+  "tooltip.axoltest2.chainzaw.tooltip.shift": "Press §l§2Shift§r for more info.",
+  "tooltip.axoltest2.chainzaw.tooltip.1": "Will decimate all tree logs",
+  "tooltip.axoltest2.chainzaw.tooltip.2": "§1Brooom Brooom§r",
+  "tooltip.axoltest2.magic_block.tooltip": "Converts §8black opals§r into §bdiamonds§r",
+  "tooltips.axoltest2.tomato.tooltip": "gives §aLUCK§r"
 }

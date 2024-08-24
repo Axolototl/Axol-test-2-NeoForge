@@ -1,0 +1,7 @@
+// 1.21	2024-08-23T19:41:37.3438674	Tags for minecraft:block mod id axoltest2
+3762e202fce0793e18e595c4975c9fd382b3145a data/minecraft/tags/block/fences.json
+e5d73bb612f221fa576d6a7713e910f34c2a5294 data/minecraft/tags/block/fence_gates.json
+9a6e3a57024448a6f5b47564ad36db76c8bbd4b5 data/minecraft/tags/block/mineable/pickaxe.json
+14f44e54e440666dc8001d3d12dfecac9b0bbe33 data/minecraft/tags/block/needs_diamond_tool.json
+3b64546b5918ecd0eea17d95a9eaf94b9e6179c7 data/minecraft/tags/block/needs_iron_tool.json
+03f76e71ef05e00c8e3e47593c4b5513c5dbfa48 data/minecraft/tags/block/walls.json
