@@ -88,6 +88,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Items.STICK)
                 .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_HELMET)
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.BLACK_OPAL)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_CHESTPLATE)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.BLACK_OPAL)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_LEGGINGS)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.BLACK_OPAL)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_BOOTS)
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.BLACK_OPAL)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL, 9)
                 .requires(ModBlocks.BLACK_OPAL_BLOCK)
                 .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK)).save(recipeOutput);

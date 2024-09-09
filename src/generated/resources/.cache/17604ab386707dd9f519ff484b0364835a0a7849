@@ -1,11 +1,15 @@
-// 1.21	2024-09-09T11:48:50.2918199	Item Models: axoltest2
+// 1.21	2024-09-09T18:52:33.9681352	Item Models: axoltest2
 4d34a29c9d5390156b9f5639bffa4f539927d809 assets/axoltest2/models/item/black_opal.json
 58d257681c0a333dfd9517ac930d2643b38eaaae assets/axoltest2/models/item/black_opal_axe.json
+06ca11c537ee127a59f42fe2d692a78776aaed56 assets/axoltest2/models/item/black_opal_boots.json
 4b335c17929a6d9509f0d050fb101c7531dc1aca assets/axoltest2/models/item/black_opal_button.json
+7cb748c76cfe403efe95865920401687c2e82686 assets/axoltest2/models/item/black_opal_chestplate.json
 d6d674b04b502b4a7608ea24bea1c07fd2b34ebe assets/axoltest2/models/item/black_opal_door.json
 ea4eb2c9d715d442624de025773da981b6d85ee9 assets/axoltest2/models/item/black_opal_fence.json
 0b1fa4b7dbdec2efd0bd11751b1ec27bf44187ab assets/axoltest2/models/item/black_opal_hammer.json
+7f420d51d6d7916d6b440e8ede7b48a6eef08b0d assets/axoltest2/models/item/black_opal_helmet.json
 5f5fa562fbd8ce7977b3fd8dc551360beea79dcb assets/axoltest2/models/item/black_opal_hoe.json
+efec41b3cc2ec61041e6a40c8fe50a8307ca1a16 assets/axoltest2/models/item/black_opal_leggings.json
 8af92e1716979ddbc006ba6928dca48f98dc5833 assets/axoltest2/models/item/black_opal_paxel.json
 b38b35263f8f1727a68ae3194bcf0bff866816ab assets/axoltest2/models/item/black_opal_pickaxe.json
 e4c4ace8fae0d0dc0057dfed03f52d774622a5bb assets/axoltest2/models/item/black_opal_shovel.json
