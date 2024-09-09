@@ -1,4 +1,4 @@
-// 1.21	2024-09-08T20:30:41.0962482	Recipes
+// 1.21	2024-09-09T11:49:41.8817795	Recipes
 57e2fca3163e5a09d7f1254eb8c7880d427cf1e1 data/axoltest2/advancement/recipes/building_blocks/black_opal_slab.json
 bf53ba2b5a0b43943c25108eb0323da86bcc6046 data/axoltest2/advancement/recipes/building_blocks/black_opal_stairs.json
 af8f66dc9c3b5b7ca0d89b3d7528ee1f7ac5ef4f data/axoltest2/advancement/recipes/building_blocks/black_opal_wall.json
@@ -22,6 +22,7 @@ ed7ac11608f5a3ce7a65de5ff4946fb46c632601 data/axoltest2/advancement/recipes/reds
 641a85ec947b6661b04596762be88ac68c8b05e0 data/axoltest2/advancement/recipes/redstone/black_opal_pressure_plate.json
 36649dbe5337264fec19f7b7e747d4a79f4fa967 data/axoltest2/advancement/recipes/redstone/black_opal_trapdoor.json
 2fa8d9f38fd6c75a9d9a42b85c6d6523a596e3f0 data/axoltest2/advancement/recipes/tools/black_opal_axe.json
+f093e009efccd21dc77a7318ec0b25e59f7ee712 data/axoltest2/advancement/recipes/tools/black_opal_hammer.json
 a9c63ef73ca8aca94d04dddbefcf7bb574bf19ea data/axoltest2/advancement/recipes/tools/black_opal_hoe.json
 9c418e808be7a6c6aa045f4d9b7dab5bf9eabe18 data/axoltest2/advancement/recipes/tools/black_opal_paxel.json
 8205e66e041670fbeff8b43b392080738caa79dd data/axoltest2/advancement/recipes/tools/black_opal_pickaxe.json
@@ -43,6 +44,7 @@ d8ad0071e486ddfddcdc4a8c782ff90eefcf7216 data/axoltest2/recipe/black_opal_from_s
 4732192ab908b4f8fd21a3063695ffeaf7e150a6 data/axoltest2/recipe/black_opal_from_smelting_black_opal_nether_ore.json
 86eec51213f8b4add82108848c2d79819ea2bcd3 data/axoltest2/recipe/black_opal_from_smelting_black_opal_ore.json
 d7fcaa33ace0a11b8378601c2fde0e8e11debc1e data/axoltest2/recipe/black_opal_from_smelting_raw_black_opal.json
+cbd274c0d895a05a85d260bc85be82b3ed3e80bf data/axoltest2/recipe/black_opal_hammer.json
 b041dfd125cc997b39f8b8f8df2860aa27c5d4ce data/axoltest2/recipe/black_opal_hoe.json
 1753290932bd8f44969942d28cab83f57978ad11 data/axoltest2/recipe/black_opal_paxel.json
 58b97c1cb3a80cfea7432eaebb3d5794f79f1d66 data/axoltest2/recipe/black_opal_pickaxe.json

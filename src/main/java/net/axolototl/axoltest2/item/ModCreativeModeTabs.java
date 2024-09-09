@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLACK_OPAL_PICKAXE);
                         output.accept(ModItems.BLACK_OPAL_SHOVEL);
                         output.accept(ModItems.BLACK_OPAL_PAXEL);
+                        output.accept(ModItems.BLACK_OPAL_HAMMER);
                     })
                     .build());
 
