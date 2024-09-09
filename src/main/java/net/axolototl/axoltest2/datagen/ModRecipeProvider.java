@@ -6,6 +6,7 @@ import net.axolototl.axoltest2.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -29,6 +30,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.BLACK_OPAL)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BLACK_OPAL_SWORD)
+                        .pattern("A")
+                        .pattern("A")
+                        .pattern("B")
+                        .define('A', ModItems.BLACK_OPAL)
+                        .define('B', Items.STICK)
+                        .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_AXE)
+                .pattern("AA")
+                .pattern("BA")
+                .pattern("B ")
+                .define('A', ModItems.BLACK_OPAL)
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_PICKAXE)
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.BLACK_OPAL)
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_SHOVEL)
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .define('A', ModItems.BLACK_OPAL)
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_HOE)
+                .pattern("AA")
+                .pattern("B ")
+                .pattern("B ")
+                .define('A', ModItems.BLACK_OPAL)
+                .define('B', Items.STICK)
                 .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL, 9)

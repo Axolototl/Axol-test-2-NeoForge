@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "axoltest2:black_opal"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BA",
+    "B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "axoltest2:black_opal_axe"
+  }
+}

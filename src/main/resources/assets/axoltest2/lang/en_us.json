@@ -5,6 +5,12 @@
   "item.axoltest2.tomato": "Tomato",
   "item.axoltest2.frostfire_ice": "Frostfire Ice",
 
+  "item.axoltest2.black_opal_sword": "Black Opal Sword",
+  "item.axoltest2.black_opal_axe": "Black Opal Axe",
+  "item.axoltest2.black_opal_shovel": "Black Opal Shovel",
+  "item.axoltest2.black_opal_pickaxe": "Black Opal Pickaxe",
+  "item.axoltest2.black_opal_hoe": "Black Opal Hoe",
+
   "block.axoltest2.raw_black_opal_block": "Raw Black Opal Block",
   "block.axoltest2.black_opal_block": "Black Opal Block",
   "block.axoltest2.black_opal_ore": "Black Opal Ore",

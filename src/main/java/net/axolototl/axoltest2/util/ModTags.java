@@ -10,6 +10,9 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks{
+        public static final TagKey<Block> INCORRECT_FOR_BLACK_OPAL_TOOL = createTag("incorrect_for_black_opal_tool");
+        public static final TagKey<Block> NEEDS_FOR_BLACK_OPAL_TOOL = createTag("needs_for_black_opal_tool");
+
         private static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(AxolTest2.MOD_ID, name));
         }
