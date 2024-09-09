@@ -3,6 +3,7 @@ package net.axolototl.axoltest2.item;
 import net.axolototl.axoltest2.AxolTest2;
 import net.axolototl.axoltest2.item.custom.ChainsawItem;
 import net.axolototl.axoltest2.item.custom.FuelItem;
+import net.axolototl.axoltest2.item.custom.PaxelItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -46,6 +47,10 @@ public class ModItems {
     public static final DeferredItem<Item> BLACK_OPAL_HOE = ITEMS.register("black_opal_hoe",
             () -> new HoeItem(ModToolTiers.BLACK_OPAL,
                     new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.BLACK_OPAL, 15, -1f))));
+
+    public static final DeferredItem<Item> BLACK_OPAL_PAXEL = ITEMS.register("black_opal_paxel",
+            () -> new PaxelItem(ModToolTiers.BLACK_OPAL,
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.BLACK_OPAL, 3, -2.3f))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
