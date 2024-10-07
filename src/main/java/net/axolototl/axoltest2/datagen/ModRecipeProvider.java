@@ -6,6 +6,7 @@ import net.axolototl.axoltest2.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -138,6 +139,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_black_opal", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.BLACK_OPAL_TRAPDOOR.get(), Ingredient.of(ModBlocks.BLACK_OPAL_BLOCK.get())).group("black_opal")
                 .unlockedBy("has_black_opal", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(recipeOutput);
+
+        trimSmithing(recipeOutput, ModItems.AXOL_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(AxolTest2.MOD_ID, "axol"));
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, java.util.List<ItemLike> ingredients, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {

@@ -1,2 +1,5 @@
-// 1.21	2024-08-23T19:41:37.3352067	Tags for minecraft:item mod id axoltest2
+// 1.21	2024-10-07T10:11:08.895359	Tags for minecraft:item mod id axoltest2
 c79fbc3168a9a85a84c60839d55ab43533fa002e data/axoltest2/tags/item/transformable_items.json
+c4601e32c826b9b910878a6281387811505441f4 data/minecraft/tags/item/trimmable_armor.json
+90a07edfe8b939082b76eb2b5b54972188f4ba42 data/minecraft/tags/item/trim_materials.json
+be5d7fec51f4889ea9d7ab12438eff63962803ac data/minecraft/tags/item/trim_templates.json

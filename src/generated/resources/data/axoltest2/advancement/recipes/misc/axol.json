@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_smithing_trim_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "axoltest2:axol_armor_trim_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "axoltest2:axol"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_smithing_trim_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "axoltest2:axol"
+    ]
+  }
+}

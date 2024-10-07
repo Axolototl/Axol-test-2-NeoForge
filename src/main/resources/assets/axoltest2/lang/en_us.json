@@ -19,6 +19,10 @@
   "item.axoltest2.black_opal_leggings": "Black Opal Leggings",
   "item.axoltest2.black_opal_boots": "Black Opal Boots",
 
+  "item.axoltest2.black_opal_horse_armor": "Black Opal Horse Armor",
+
+  "item.axoltest2.axol_armor_trim_smithing_template": "Axol Trim Template",
+
   "block.axoltest2.raw_black_opal_block": "Raw Black Opal Block",
   "block.axoltest2.black_opal_block": "Black Opal Block",
   "block.axoltest2.black_opal_ore": "Black Opal Ore",
@@ -47,5 +51,8 @@
   "tooltip.axoltest2.chainzaw.tooltip.1": "Will decimate all tree logs",
   "tooltip.axoltest2.chainzaw.tooltip.2": "§1Brooom Brooom§r",
   "tooltip.axoltest2.magic_block.tooltip": "Converts §8black opals§r into §bdiamonds§r",
-  "tooltips.axoltest2.tomato.tooltip": "gives §aLUCK§r"
+  "tooltips.axoltest2.tomato.tooltip": "gives §aLUCK§r",
+
+  "trim_pattern.axoltest2.axol": "Axol Armor Trim",
+  "trim_pattern.axoltest2.black_opal": "Black Opal Material"
 }

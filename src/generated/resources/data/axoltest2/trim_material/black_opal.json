@@ -1,0 +1,9 @@
+{
+  "asset_name": "black_opal",
+  "description": {
+    "color": "#031CFC",
+    "translate": "trim_material.axoltest2.black_opal"
+  },
+  "ingredient": "axoltest2:black_opal",
+  "item_model_index": 0.3
+}

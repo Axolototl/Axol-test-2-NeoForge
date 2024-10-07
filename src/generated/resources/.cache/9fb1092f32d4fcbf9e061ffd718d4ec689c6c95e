@@ -1,9 +1,10 @@
-// 1.21	2024-09-09T18:52:33.9711238	Recipes
+// 1.21	2024-10-07T10:11:08.8971625	Recipes
 57e2fca3163e5a09d7f1254eb8c7880d427cf1e1 data/axoltest2/advancement/recipes/building_blocks/black_opal_slab.json
 bf53ba2b5a0b43943c25108eb0323da86bcc6046 data/axoltest2/advancement/recipes/building_blocks/black_opal_stairs.json
 af8f66dc9c3b5b7ca0d89b3d7528ee1f7ac5ef4f data/axoltest2/advancement/recipes/building_blocks/black_opal_wall.json
 2f4295cb0844e1caa5e0e1f4b42004061386ec32 data/axoltest2/advancement/recipes/combat/black_opal_sword.json
 2446f995fc4aadb1ad4c059c28003b5f9b5dddb9 data/axoltest2/advancement/recipes/decorations/black_opal_fence.json
+f48cf8678887e818aa14b42afda79ae0bc836fda data/axoltest2/advancement/recipes/misc/axol.json
 f3f1b1266a88d2408f03063fe685c4122a7d8b3e data/axoltest2/advancement/recipes/misc/black_opal.json
 241de686e3cf37756a3965d2f69ec7b9ea40169b data/axoltest2/advancement/recipes/misc/black_opal_block.json
 7192c0d1865bc5e9fdc19bcecddb3557de6e3d1a data/axoltest2/advancement/recipes/misc/black_opal_from_blasting_black_opal_deepslate_ore.json
@@ -31,6 +32,7 @@ fce069bc786f05f93840c7546a8a37d70136791a data/axoltest2/advancement/recipes/tool
 9c418e808be7a6c6aa045f4d9b7dab5bf9eabe18 data/axoltest2/advancement/recipes/tools/black_opal_paxel.json
 8205e66e041670fbeff8b43b392080738caa79dd data/axoltest2/advancement/recipes/tools/black_opal_pickaxe.json
 ebed3132b1841056cf27072b76ddf7ac4724fd39 data/axoltest2/advancement/recipes/tools/black_opal_shovel.json
+8f59c334c0758ae0e7c96f74f5a61bab2b558eb2 data/axoltest2/recipe/axol.json
 66b76699d825106fba2d68dda51f25616c3e21a6 data/axoltest2/recipe/black_opal.json
 f2e4066f269c695a3bbcbc073f563a5673fff667 data/axoltest2/recipe/black_opal_axe.json
 bd98bc1d1a89b8337885680b34894736021ba381 data/axoltest2/recipe/black_opal_block.json

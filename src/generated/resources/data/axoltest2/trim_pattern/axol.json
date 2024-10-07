@@ -1,0 +1,8 @@
+{
+  "asset_id": "axoltest2:axol",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.axoltest2.axol"
+  },
+  "template_item": "axoltest2:axol_armor_trim_smithing_template"
+}
