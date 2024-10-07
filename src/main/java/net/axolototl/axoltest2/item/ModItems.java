@@ -25,7 +25,7 @@ public class ModItems {
             ITEMS.registerItem("tomato", properties -> new Item(properties) {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltips.axoltest.tomato.tooltip"));
+                    tooltipComponents.add(Component.translatable("tooltips.axoltest2.tomato.tooltip"));
 
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }

@@ -1,4 +1,4 @@
-// 1.21	2024-08-23T19:41:37.3408774	Loot Tables
+// 1.21	2024-10-07T11:00:27.4734413	Loot Tables
 56163da0474ab3f03a18bfff34a2bcaf18361305 data/axoltest2/loot_table/blocks/black_opal_block.json
 4bb9534627cd90153f65c4351591ae14590bbe52 data/axoltest2/loot_table/blocks/black_opal_button.json
 69443e767153ae3dc235ca2f915c069f2e20d5c6 data/axoltest2/loot_table/blocks/black_opal_deepslate_ore.json
@@ -6,6 +6,7 @@ a5a91aff62b928147cc1496a94d0bf50f5fe8db4 data/axoltest2/loot_table/blocks/black_
 ae119f605e279ea43545385da102ed6c02770074 data/axoltest2/loot_table/blocks/black_opal_end_ore.json
 76c9db95a3a7637d9349baa9e72fcb0987fa3024 data/axoltest2/loot_table/blocks/black_opal_fence.json
 4ec693e95eaef03b312c551bac0c90003592aeef data/axoltest2/loot_table/blocks/black_opal_fence_gate.json
+ea08aea0bba0a643a53c8a5ec03f0de4353aaa72 data/axoltest2/loot_table/blocks/black_opal_lamp.json
 d07f6b9e4777858f972574c9259fb2d47dd1def9 data/axoltest2/loot_table/blocks/black_opal_nether_ore.json
 0b723b7aa1a5eb73cccd58c817bcf8b2131e2ede data/axoltest2/loot_table/blocks/black_opal_ore.json
 ad0f1b27c6774ad2e0048407ec25470f7ba888e9 data/axoltest2/loot_table/blocks/black_opal_pressure_plate.json

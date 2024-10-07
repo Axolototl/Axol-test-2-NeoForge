@@ -1,4 +1,4 @@
-// 1.21	2024-08-23T19:41:37.3367125	Block States: axoltest2
+// 1.21	2024-10-07T11:00:27.4689427	Block States: axoltest2
 96968780d9897fdca3096ba4134a223fdc1ee370 assets/axoltest2/blockstates/black_opal_block.json
 8b0f3fc8912ccda38380dba39103e5f01f1622cd assets/axoltest2/blockstates/black_opal_button.json
 3698ebf5a51ce401e7d2faaea77ddd65cf2f58ab assets/axoltest2/blockstates/black_opal_deepslate_ore.json
@@ -6,6 +6,7 @@ c8bdb413b36323357f1cdfd0adbd72c216bc3f32 assets/axoltest2/blockstates/black_opal
 bb3e9469502830c5f6fb8928ec5ed3e89852db23 assets/axoltest2/blockstates/black_opal_end_ore.json
 5cb04e6e582788028353322db842228650ed1cce assets/axoltest2/blockstates/black_opal_fence.json
 b5a4c1b50ffec822b489da0c07d88c28998877e8 assets/axoltest2/blockstates/black_opal_fence_gate.json
+03b1622c9993fab2c06c78f4d139352019aceee5 assets/axoltest2/blockstates/black_opal_lamp.json
 6f71bd35f53571949807478f9ead3494f7435ecc assets/axoltest2/blockstates/black_opal_nether_ore.json
 dd3c1c90def79701864ee62c06ad80b595a375fe assets/axoltest2/blockstates/black_opal_ore.json
 6596fc784c329356eeeb24235197026df4a0ecbe assets/axoltest2/blockstates/black_opal_pressure_plate.json
@@ -34,6 +35,8 @@ bfd5d0099e5fd20c8b3d0ea2b50de1e6ec51f52a assets/axoltest2/models/block/black_opa
 0986a340af5da6c5856bf6e005837f4e2853f05a assets/axoltest2/models/block/black_opal_fence_gate_wall_open.json
 588778b71b871458236ef212dde4819d11639710 assets/axoltest2/models/block/black_opal_fence_post.json
 48314f1534738394dc80922d758742fc67fffdd9 assets/axoltest2/models/block/black_opal_fence_side.json
+a5ffcc809f510dce68ca431dbe3a554323286d1f assets/axoltest2/models/block/black_opal_lamp_off.json
+5277931530b548687759b6f4cefcf3371c7ff7e1 assets/axoltest2/models/block/black_opal_lamp_on.json
 5332d39b3c7d3ab0e125527cd7ebc03543fd8716 assets/axoltest2/models/block/black_opal_nether_ore.json
 c1d90a5da5e8f1070052c1c1eb222ec2ad4e1951 assets/axoltest2/models/block/black_opal_ore.json
 e4cf0e48be27c871fdd49e7b64ce0c6457dd95d5 assets/axoltest2/models/block/black_opal_pressure_plate.json
@@ -55,6 +58,7 @@ adaf1173e1547c87fa56927ee2dfe76cb48354b0 assets/axoltest2/models/block/magic_blo
 5e4e219c8142051bd2758a33eb1b50b1964ebbfc assets/axoltest2/models/item/black_opal_deepslate_ore.json
 474c31b3a02a2d625d961477cd25afb1339899e3 assets/axoltest2/models/item/black_opal_end_ore.json
 a918b1481ed220a281f63b4c68cef2a537faa5a0 assets/axoltest2/models/item/black_opal_fence_gate.json
+ac25f3ae00ec17294986f0029f9fe0f6ed5471cd assets/axoltest2/models/item/black_opal_lamp.json
 5df3c2e1562060bed40a7dd3d3324061af486b14 assets/axoltest2/models/item/black_opal_nether_ore.json
 f15a3e97c7f20ae20bb830b493aa72e2f8f11802 assets/axoltest2/models/item/black_opal_ore.json
 855e7aebe3da24b2f4620c0bdd023bb6ea1f9682 assets/axoltest2/models/item/black_opal_pressure_plate.json

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "axoltest2:block/black_opal_lamp_off"
+    },
+    "clicked=true": {
+      "model": "axoltest2:block/black_opal_lamp_on"
+    }
+  }
+}

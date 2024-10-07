@@ -2,6 +2,7 @@ package net.axolototl.axoltest2.block;
 
 
 import net.axolototl.axoltest2.AxolTest2;
+import net.axolototl.axoltest2.block.custom.BlackOpalLampBlock;
 import net.axolototl.axoltest2.block.custom.MagicBlock;
 import net.axolototl.axoltest2.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -64,6 +65,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLACK_OPAL_TRAPDOOR = registerBlock("black_opal_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static  final DeferredBlock<Block> BLACK_OPAL_LAMP = registerBlock("black_opal_lamp",
+            () -> new BlackOpalLampBlock(BlockBehaviour.Properties.of().strength(2.5f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BlackOpalLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
