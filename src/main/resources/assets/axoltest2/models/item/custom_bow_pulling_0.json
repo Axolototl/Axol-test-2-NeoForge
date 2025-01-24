@@ -1,0 +1,6 @@
+{
+  "parent": "axoltest2:item/custom_bow",
+  "textures": {
+    "layer0": "axoltest2:item/custom_bow_pulling_0"
+  }
+}

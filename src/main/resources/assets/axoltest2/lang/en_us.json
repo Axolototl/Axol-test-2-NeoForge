@@ -5,6 +5,9 @@
   "item.axoltest2.tomato": "Tomato",
   "item.axoltest2.frostfire_ice": "Frostfire Ice",
 
+  "item.axoltest2.metal_detector": "Metal Detector",
+  "item.axoltest2.data_tablet": "Data Tablet",
+
   "item.axoltest2.black_opal_sword": "Black Opal Sword",
   "item.axoltest2.black_opal_axe": "Black Opal Axe",
   "item.axoltest2.black_opal_shovel": "Black Opal Shovel",
@@ -13,6 +16,8 @@
 
   "item.axoltest2.black_opal_paxel": "Black Opal Paxel",
   "item.axoltest2.black_opal_hammer": "Black Opal Hammer",
+
+  "item.axoltest2.custom_bow": "Custom Bow",
 
   "item.axoltest2.black_opal_helmet": "Black Opal Helmet",
   "item.axoltest2.black_opal_chestplate": "Black Opal Chestplate",
@@ -54,6 +59,8 @@
   "tooltip.axoltest2.chainzaw.tooltip.2": "§1Brooom Brooom§r",
   "tooltip.axoltest2.magic_block.tooltip": "Converts §8black opals§r into §bdiamonds§r",
   "tooltips.axoltest2.tomato.tooltip": "gives §aLUCK§r",
+
+  "item.axoltest2.metal_detector.no_valuables": "No Iron :(",
 
   "trim_pattern.axoltest2.axol": "Axol Armor Trim",
   "trim_pattern.axoltest2.black_opal": "Black Opal Material"

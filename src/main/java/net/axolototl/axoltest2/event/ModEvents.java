@@ -1,13 +1,19 @@
 package net.axolototl.axoltest2.event;
 
 import net.axolototl.axoltest2.AxolTest2;
+import net.axolototl.axoltest2.item.ModItems;
 import net.axolototl.axoltest2.item.custom.HammerItem;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 
 import java.util.HashSet;
@@ -36,6 +42,18 @@ public class ModEvents {
                 HARVESTED_BLOCKS.add(pos);
                 serverPlayer.gameMode.destroyBlock(pos);
                 HARVESTED_BLOCKS.remove(pos);
+            }
+        }
+    }
+    @SubscribeEvent
+    public static void livingDamage(LivingDamageEvent.Pre event){
+        if(event.getEntity() instanceof Sheep sheep) {
+            if(event.getSource().getDirectEntity() instanceof Player player){
+                if(player.getMainHandItem().getItem() == ModItems.BLACK_OPAL_SWORD.get()){
+                    player.sendSystemMessage(Component.literal(player.getName().getString()+" used a black opal sword with a Sheep"));
+                    sheep.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 400, 1));
+                    player.addEffect(new MobEffectInstance(MobEffects.JUMP, 600, 100));
+                }
             }
         }
     }

@@ -1,9 +1,11 @@
 package net.axolototl.axoltest2;
 
 import net.axolototl.axoltest2.block.ModBlocks;
+import net.axolototl.axoltest2.component.ModDataComponentTypes;
 import net.axolototl.axoltest2.item.ModArmorMaterials;
 import net.axolototl.axoltest2.item.ModCreativeModeTabs;
 import net.axolototl.axoltest2.item.ModItems;
+import net.axolototl.axoltest2.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -46,6 +48,8 @@ public class AxolTest2 {
         ModCreativeModeTabs.register(modEventBus);
 
         ModArmorMaterials.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -93,9 +97,7 @@ public class AxolTest2 {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            ModItemProperties.customItemProperties();
         }
     }
 }

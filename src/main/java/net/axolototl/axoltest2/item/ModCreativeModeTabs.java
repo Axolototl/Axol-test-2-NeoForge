@@ -40,6 +40,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLACK_OPAL_BOOTS);
                         output.accept(ModItems.BLACK_OPAL_HORSE_ARMOR);
                         output.accept(ModItems.AXOL_SMITHING_TEMPLATE);
+                        output.accept(ModItems.METAL_DETECTOR);
+                        output.accept(ModItems.DATA_TABLET);
+                        output.accept(ModItems.CUSTOM_BOW);
                     })
                     .build());
 

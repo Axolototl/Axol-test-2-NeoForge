@@ -76,6 +76,13 @@ public class ModItems {
     public static final DeferredItem<Item> AXOL_SMITHING_TEMPLATE = ITEMS.register("axol_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(AxolTest2.MOD_ID, "axol")));
 
+    public static final DeferredItem<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+    public static final DeferredItem<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CUSTOM_BOW = ITEMS.register("custom_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
