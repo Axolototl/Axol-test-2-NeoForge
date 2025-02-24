@@ -1,0 +1,10 @@
+{
+  "values": {
+    "axoltest2:tomato": {
+      "chance": 0.45
+    },
+    "axoltest2:tomato_seeds": {
+      "chance": 0.23
+    }
+  }
+}

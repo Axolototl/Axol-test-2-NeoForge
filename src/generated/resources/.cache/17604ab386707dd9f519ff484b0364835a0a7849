@@ -1,4 +1,4 @@
-// 1.21	2025-01-16T18:29:09.8889929	Item Models: axoltest2
+// 1.21	2025-01-31T13:28:16.3635277	Item Models: axoltest2
 c793a13492a8df4a1f643657597e99e07a353f01 assets/axoltest2/models/item/axol_armor_trim_smithing_template.json
 4d34a29c9d5390156b9f5639bffa4f539927d809 assets/axoltest2/models/item/black_opal.json
 58d257681c0a333dfd9517ac930d2643b38eaaae assets/axoltest2/models/item/black_opal_axe.json
@@ -58,8 +58,9 @@ e4c4ace8fae0d0dc0057dfed03f52d774622a5bb assets/axoltest2/models/item/black_opal
 279a2b5ca266cc706ead50e5ff52b241fdbd9c20 assets/axoltest2/models/item/black_opal_sword.json
 3df2148ed6e3a3be35e8e5ee0d06f709c1807274 assets/axoltest2/models/item/black_opal_wall.json
 1b24cd078b1586f8775ad3e5be80dab5cba97608 assets/axoltest2/models/item/chainsaw.json
-ef12d8334b5d38e3966c592c92364aec3d17de32 assets/axoltest2/models/item/data_tablet.json
 561d00b4f1c9c22988b266eca846770e47aca145 assets/axoltest2/models/item/frostfire_ice.json
 fd4092b57d448e4952dc132ef755666e35a2b6ba assets/axoltest2/models/item/metal_detector.json
 acb86b6a12252816f5a18a1f997bbff98aad9406 assets/axoltest2/models/item/raw_black_opal.json
 34e362389e7d5844bc1dfa212c9c5347d93f9bc2 assets/axoltest2/models/item/tomato.json
+aec7d63e50cb411dfedb631d0a7282b0a831eedf assets/axoltest2/models/item/tomato_seeds.json
+3da0098d3184394448fdc69dc7c711ac549e62b2 assets/axoltest2/models/item/trebol.json

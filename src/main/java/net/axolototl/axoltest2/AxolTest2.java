@@ -6,13 +6,15 @@ import net.axolototl.axoltest2.item.ModArmorMaterials;
 import net.axolototl.axoltest2.item.ModCreativeModeTabs;
 import net.axolototl.axoltest2.item.ModItems;
 import net.axolototl.axoltest2.util.ModItemProperties;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.block.FlowerPotBlock;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -64,15 +66,9 @@ public class AxolTest2 {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-
-        if (Config.logDirtBlock)
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-
-        LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
-
-        Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
+        event.enqueueWork(() ->{
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.TREBOL.getId(), ModBlocks.POTTED_TREBOL);
+        });
     }
 
     // Add the example block item to the building blocks tab
@@ -98,6 +94,18 @@ public class AxolTest2 {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             ModItemProperties.customItemProperties();
+        }
+
+        @SubscribeEvent
+        public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
+            event.register((blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter != null && blockPos != null ?
+                    BiomeColors.getAverageFoliageColor(blockAndTintGetter, blockPos) : FoliageColor.getDefaultColor(),
+                     ModBlocks.COLORED_LEAVES.get());
+        }
+
+        @SubscribeEvent
+        public static void registerColoreditems(RegisterColorHandlersEvent.Item event) {
+            event.register((itemStack, i) -> FoliageColor.getDefaultColor(), ModBlocks.COLORED_LEAVES);
         }
     }
 }

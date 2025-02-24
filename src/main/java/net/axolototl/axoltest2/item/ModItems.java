@@ -1,6 +1,7 @@
 package net.axolototl.axoltest2.item;
 
 import net.axolototl.axoltest2.AxolTest2;
+import net.axolototl.axoltest2.block.ModBlocks;
 import net.axolototl.axoltest2.item.custom.*;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.network.chat.Component;
@@ -82,6 +83,8 @@ public class ModItems {
             () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> CUSTOM_BOW = ITEMS.register("custom_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+    public static final DeferredItem<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

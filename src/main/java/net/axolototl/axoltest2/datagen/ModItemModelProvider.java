@@ -75,6 +75,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.METAL_DETECTOR.get());
         // basicItem(ModItems.DATA_TABLET.get());
+
+        basicItem(ModItems.TOMATO_SEEDS.get());
+
+        flowerItem(ModBlocks.TREBOL);
+    }
+
+    public void flowerItem(DeferredBlock<Block> block) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("item/generated"))
+                .texture("layer0",  ResourceLocation.fromNamespaceAndPath(AxolTest2.MOD_ID,
+                        "block/" + block.getId().getPath()));
     }
 
     // Shoutout to El_Redstoniano for making this

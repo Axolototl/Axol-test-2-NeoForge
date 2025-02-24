@@ -8,6 +8,8 @@
   "item.axoltest2.metal_detector": "Metal Detector",
   "item.axoltest2.data_tablet": "Data Tablet",
 
+  "item.axoltest2.tomato_seeds": "Tomato seeds",
+
   "item.axoltest2.black_opal_sword": "Black Opal Sword",
   "item.axoltest2.black_opal_axe": "Black Opal Axe",
   "item.axoltest2.black_opal_shovel": "Black Opal Shovel",
@@ -38,6 +40,13 @@
 
   "block.axoltest2.black_opal_stairs": "Black Opal Stairs",
   "block.axoltest2.black_opal_slab": "Black Opal Slab",
+
+  "block.axoltest2.tomato_crop": "Tomato Crop",
+
+  "block.axoltest2.trebol": "Trebol",
+  "block.axoltest2.potted_trebol": "Potted Trebol",
+
+  "block.axoltest2.colored_leaves": "Wonder Leaves",
 
   "block.axoltest2.black_opal_pressure_plate": "Black Opal Pressure Plate",
   "block.axoltest2.black_opal_button": "Black Opal Button",

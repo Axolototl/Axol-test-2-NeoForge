@@ -3,9 +3,11 @@ package net.axolototl.axoltest2.datagen;
 import net.axolototl.axoltest2.AxolTest2;
 import net.axolototl.axoltest2.block.ModBlocks;
 import net.axolototl.axoltest2.block.custom.BlackOpalLampBlock;
+import net.axolototl.axoltest2.block.custom.TomatoCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -13,6 +15,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.awt.*;
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -52,6 +55,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BLACK_OPAL_TRAPDOOR, "_bottom");
 
         customLamp();
+
+        makeCrop(((TomatoCropBlock) ModBlocks.TOMATO_CROP.get()), "tomato_crop_stage","tomato_crop_stage");
+
+        simpleBlock(ModBlocks.TREBOL.get(),
+                models().cross(blockTexture(ModBlocks.TREBOL.get()).getPath(), blockTexture(ModBlocks.TREBOL.get())).renderType("cutout"));
+
+        simpleBlock(ModBlocks.POTTED_TREBOL.get(), models().singleTexture("potted_trebol",
+                ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.TREBOL.get())).renderType("cutout"));
+
+        leavesBlock(ModBlocks.COLORED_LEAVES);
+    }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private void leavesBlock(DeferredBlock<Block> deferredBlock) {
+        simpleBlockWithItem(deferredBlock.get(),
+                models().singleTexture(deferredBlock.getId().getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(deferredBlock.get())).renderType("cutout"));
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TomatoCropBlock) block).getAgeProperty()),
+                ResourceLocation.fromNamespaceAndPath(AxolTest2.MOD_ID, "block/" + textureName +
+                        state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
     }
 
     private void customLamp() {

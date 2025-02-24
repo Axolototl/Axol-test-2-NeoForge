@@ -4,8 +4,10 @@ package net.axolototl.axoltest2.block;
 import net.axolototl.axoltest2.AxolTest2;
 import net.axolototl.axoltest2.block.custom.BlackOpalLampBlock;
 import net.axolototl.axoltest2.block.custom.MagicBlock;
+import net.axolototl.axoltest2.block.custom.TomatoCropBlock;
 import net.axolototl.axoltest2.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -68,6 +70,18 @@ public class ModBlocks {
     public static  final DeferredBlock<Block> BLACK_OPAL_LAMP = registerBlock("black_opal_lamp",
             () -> new BlackOpalLampBlock(BlockBehaviour.Properties.of().strength(2.5f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BlackOpalLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final DeferredBlock<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () ->
+            new TomatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> TREBOL = registerBlock("trebol",
+            () -> new FlowerBlock(MobEffects.DOLPHINS_GRACE, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.ALLIUM)));
+
+    public static final DeferredBlock<Block> POTTED_TREBOL = BLOCKS.register("potted_trebol",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), TREBOL, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
+
+    public static final DeferredBlock<Block> COLORED_LEAVES = registerBlock("colored_leaves",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion().noCollission()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
