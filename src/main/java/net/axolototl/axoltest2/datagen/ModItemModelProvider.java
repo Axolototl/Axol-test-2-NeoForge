@@ -79,6 +79,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TOMATO_SEEDS.get());
 
         flowerItem(ModBlocks.TREBOL);
+
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
 
     public void flowerItem(DeferredBlock<Block> block) {

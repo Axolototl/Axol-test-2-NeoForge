@@ -71,6 +71,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_TREBOL.get(), createPotFlowerItemTable(ModBlocks.TREBOL.asItem()));
 
         dropSelf(ModBlocks.COLORED_LEAVES.get());
+
+        dropSelf(ModBlocks.PEDESTAL.get());
     }
 
     @Override

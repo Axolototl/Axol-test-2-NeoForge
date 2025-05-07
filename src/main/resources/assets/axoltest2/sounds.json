@@ -1,0 +1,52 @@
+{
+  "chainsaw_cut": {
+    "subtitle": "sounds.axoltest2.chainsaw_cut",
+    "sounds": [
+      "axoltest2:chainsaw_cut"
+    ]
+  },
+  "chainsaw_pull": {
+    "subtitle": "sounds.axoltest2.chainsaw_pull",
+    "sounds": [
+      "axoltest2:chainsaw_pull"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.axoltest2.magic_block_break",
+    "sounds": [
+      "axoltest2:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.axoltest2.magic_block_step",
+    "sounds": [
+      "axoltest2:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.axoltest2.magic_block_place",
+    "sounds": [
+      "axoltest2:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.axoltest2.magic_block_hit",
+    "sounds": [
+      "axoltest2:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.axoltest2.magic_block_fall",
+    "sounds": [
+      "axoltest2:magic_block_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "axoltest2:bar_brawl",
+        "stream": true
+      }
+    ]
+  }
+}

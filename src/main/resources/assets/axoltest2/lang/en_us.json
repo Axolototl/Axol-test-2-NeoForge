@@ -30,6 +30,21 @@
 
   "item.axoltest2.axol_armor_trim_smithing_template": "Axol Trim Template",
 
+  "item.axoltest2.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.axoltest2.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.axoltest2.radiation_staff": "Radiation Staff",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "effect.axoltest2.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.wither_potion": "Wither Potion",
+  "item.minecraft.splash_potion.effect.wither_potion": "Wither Splash Potion",
+  "item.minecraft.lingering_potion.effect.wither_potion": "Wither Lingering Potion",
+
   "block.axoltest2.raw_black_opal_block": "Raw Black Opal Block",
   "block.axoltest2.black_opal_block": "Black Opal Block",
   "block.axoltest2.black_opal_ore": "Black Opal Ore",
@@ -60,6 +75,8 @@
 
   "block.axoltest2.black_opal_lamp": "Black Opal Lamp",
 
+  "block.axoltest2.pedestal": "Pedestal",
+
   "itemGroup.axoltest2.black_opal_items_tab": "Black Opal Items",
   "itemGroup.axoltest2.black_opal_blocks_tab": "Black Opal Blocks",
 
@@ -72,5 +89,10 @@
   "item.axoltest2.metal_detector.no_valuables": "No Iron :(",
 
   "trim_pattern.axoltest2.axol": "Axol Armor Trim",
-  "trim_pattern.axoltest2.black_opal": "Black Opal Material"
+  "trim_pattern.axoltest2.black_opal": "Black Opal Material",
+
+  "sounds.axoltest2.chainsaw_cut": "Chainsaw cutting",
+  "sounds.axoltest2.chainsaw_pull": "Chainsaw fails",
+
+  "entity.minecraft.villager.axoltest2.kaupenger": "Kaupenger"
 }

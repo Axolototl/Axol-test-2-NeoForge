@@ -4,8 +4,10 @@ package net.axolototl.axoltest2.block;
 import net.axolototl.axoltest2.AxolTest2;
 import net.axolototl.axoltest2.block.custom.BlackOpalLampBlock;
 import net.axolototl.axoltest2.block.custom.MagicBlock;
+import net.axolototl.axoltest2.block.custom.PedestalBlock;
 import net.axolototl.axoltest2.block.custom.TomatoCropBlock;
 import net.axolototl.axoltest2.item.ModItems;
+import net.axolototl.axoltest2.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -30,19 +32,19 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> BLACK_OPAL_ORE = registerBlock("black_opal_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 8),
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> BLACK_OPAL_DEEPSLATE_ORE = registerBlock("black_opal_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 8),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> BLACK_OPAL_NETHER_ORE = registerBlock("black_opal_nether_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 8),
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
     public static final DeferredBlock<Block> BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 8),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<Block> BLACK_OPAL_STAIRS = registerBlock("black_opal_stairs",
             () -> new StairBlock(ModBlocks.BLACK_OPAL_BLOCK.get().defaultBlockState(),
@@ -81,7 +83,10 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), TREBOL, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
 
     public static final DeferredBlock<Block> COLORED_LEAVES = registerBlock("colored_leaves",
-            () -> new Block(BlockBehaviour.Properties.of().noOcclusion().noCollission()));
+        () -> new Block(BlockBehaviour.Properties.of().noOcclusion().noCollission().sound(SoundType.CHERRY_LEAVES)));
+
+    public static final DeferredBlock<Block> PEDESTAL = registerBlock("pedestal",
+            () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

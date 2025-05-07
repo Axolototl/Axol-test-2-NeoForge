@@ -3,6 +3,7 @@ package net.axolototl.axoltest2.item;
 import net.axolototl.axoltest2.AxolTest2;
 import net.axolototl.axoltest2.block.ModBlocks;
 import net.axolototl.axoltest2.item.custom.*;
+import net.axolototl.axoltest2.sound.ModSounds;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -85,6 +86,12 @@ public class ModItems {
             () -> new BowItem(new Item.Properties().durability(500)));
     public static final DeferredItem<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.registerItem("bar_brawl_music_disc",
+            properties -> new Item(properties.jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> RADIATION_STAFF = ITEMS.registerItem("radiation_staff",
+            properties -> new Item(properties.stacksTo(1)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

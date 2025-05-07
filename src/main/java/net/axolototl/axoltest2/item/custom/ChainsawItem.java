@@ -1,10 +1,13 @@
 package net.axolototl.axoltest2.item.custom;
 
 import net.axolototl.axoltest2.component.ModDataComponentTypes;
+import net.axolototl.axoltest2.sound.ModSounds;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -34,6 +37,12 @@ public class ChainsawItem extends Item {
                         item -> Objects.requireNonNull(context.getPlayer()).onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 context.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), context.getClickedPos());
+
+                context.getLevel().playSound(null, context.getPlayer().blockPosition(), ModSounds.CHAINSAW_CUT.get(),
+                        SoundSource.PLAYERS, 2f, 2f);
+            } else {
+                context.getLevel().playSound(null, context.getPlayer().blockPosition(), ModSounds.CHAINSAW_PULL.get(),
+                        SoundSource.PLAYERS, 2f, 2f);
             }
         }
         return InteractionResult.CONSUME;

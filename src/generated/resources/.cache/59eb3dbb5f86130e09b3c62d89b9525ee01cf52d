@@ -1,4 +1,4 @@
-// 1.21	2025-02-24T14:17:43.4951338	Loot Tables
+// 1.21	2025-03-19T11:39:38.2501047	Loot Tables
 56163da0474ab3f03a18bfff34a2bcaf18361305 data/axoltest2/loot_table/blocks/black_opal_block.json
 4bb9534627cd90153f65c4351591ae14590bbe52 data/axoltest2/loot_table/blocks/black_opal_button.json
 69443e767153ae3dc235ca2f915c069f2e20d5c6 data/axoltest2/loot_table/blocks/black_opal_deepslate_ore.json
@@ -16,6 +16,7 @@ d6760d68bc9a54157d0a7d57842dd531c2d70007 data/axoltest2/loot_table/blocks/black_
 99a4b4b23f2e1a08c2a83f2e938e91dd8d43aed9 data/axoltest2/loot_table/blocks/black_opal_wall.json
 1f0ef1ee997342581e5f95c28831a4c06d051087 data/axoltest2/loot_table/blocks/colored_leaves.json
 ef04962c0cc1239da3b54394997b3f5850d00295 data/axoltest2/loot_table/blocks/magic_block.json
+cb7a6ed289691274813493593e41f7e25a94fc41 data/axoltest2/loot_table/blocks/pedestal.json
 ac99865417e4fd3612033f97341e23c28fd53240 data/axoltest2/loot_table/blocks/potted_trebol.json
 d73ff99507b1fc063f5584a87bf988b8f658ba86 data/axoltest2/loot_table/blocks/raw_black_opal_block.json
 fddbfc6cef7789fa197a00b99d9771a740e0b420 data/axoltest2/loot_table/blocks/tomato_crop.json

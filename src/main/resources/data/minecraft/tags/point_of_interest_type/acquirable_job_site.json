@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "axoltest2:magic_poi",
+      "required": false
+    }
+  ]
+}

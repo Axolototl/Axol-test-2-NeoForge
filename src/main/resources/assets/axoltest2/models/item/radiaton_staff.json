@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "axoltest2:item/radiation_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "axoltest2:item/radiation_staff_2d"
+    },
+    "ground": {
+      "parent": "axoltest2:item/radiation_staff_2d"
+    },
+    "fixed": {
+      "parent": "axoltest2:item/radiation_staff_2d"
+    }
+  }
+}

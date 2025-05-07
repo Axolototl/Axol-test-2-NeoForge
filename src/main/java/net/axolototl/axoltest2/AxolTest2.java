@@ -2,10 +2,14 @@ package net.axolototl.axoltest2;
 
 import net.axolototl.axoltest2.block.ModBlocks;
 import net.axolototl.axoltest2.component.ModDataComponentTypes;
+import net.axolototl.axoltest2.effect.ModEffects;
 import net.axolototl.axoltest2.item.ModArmorMaterials;
 import net.axolototl.axoltest2.item.ModCreativeModeTabs;
 import net.axolototl.axoltest2.item.ModItems;
+import net.axolototl.axoltest2.potion.ModPotions;
+import net.axolototl.axoltest2.sound.ModSounds;
 import net.axolototl.axoltest2.util.ModItemProperties;
+import net.axolototl.axoltest2.villager.ModVillagers;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.FoliageColor;
@@ -52,6 +56,14 @@ public class AxolTest2 {
         ModArmorMaterials.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+
+        ModSounds.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+
+        ModPotions.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.

@@ -44,6 +44,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DATA_TABLET);
                         output.accept(ModItems.CUSTOM_BOW);
                         output.accept(ModItems.TOMATO_SEEDS);
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        output.accept(ModItems.RADIATION_STAFF);
 
                     })
                     .build());
@@ -73,6 +75,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BLACK_OPAL_LAMP);
                         output.accept(ModBlocks.TREBOL);
                         output.accept(ModBlocks.COLORED_LEAVES);
+                        output.accept(ModBlocks.PEDESTAL);
                     })
                     .build());
 
